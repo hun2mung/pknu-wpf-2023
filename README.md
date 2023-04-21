@@ -23,4 +23,7 @@ WPF : Windows Presentation Foundation
 
 ## 4일차
 - WPF 응용
-    - MahApps.Metro 등등 화이팅
+    - MahApps.Metro 디자인 적용
+    - MVVM 패턴
+    - 데이터바인딩 DB 연동
+
