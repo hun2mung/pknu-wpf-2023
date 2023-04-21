@@ -27,3 +27,4 @@ WPF : Windows Presentation Foundation
     - MVVM 패턴
     - 데이터바인딩 DB 연동
 
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wpf01_personalInfo.png" width="600">
