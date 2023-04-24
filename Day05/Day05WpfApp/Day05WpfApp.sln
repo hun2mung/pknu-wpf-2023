@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wp09_caliburnApp", "wp09_ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wp08_personalInfoApp", "..\..\Day04\Day04WpfApp\wp08_personalInfoApp\wp08_personalInfoApp.csproj", "{E264E797-7286-4487-997E-65F743AF14ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wp10_employeesApp", "wp10_employeesApp\wp10_employeesApp.csproj", "{717B547D-49AF-45ED-96F8-72B31D2CBC6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E264E797-7286-4487-997E-65F743AF14ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E264E797-7286-4487-997E-65F743AF14ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E264E797-7286-4487-997E-65F743AF14ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717B547D-49AF-45ED-96F8-72B31D2CBC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717B547D-49AF-45ED-96F8-72B31D2CBC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717B547D-49AF-45ED-96F8-72B31D2CBC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717B547D-49AF-45ED-96F8-72B31D2CBC6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

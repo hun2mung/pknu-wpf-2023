@@ -1,8 +1,8 @@
 ﻿using Caliburn.Micro;
 using System.Windows;
-using wp09_caliburnApp.ViewModels;
+using wp10_employeesApp.ViewModels;
 
-namespace wp09_caliburnApp
+namespace wp10_employeesApp
 {
     // Caliburn으로 MVVM 실행할 때 주요 설정 진행
     public class Bootstrapper : BootstrapperBase
