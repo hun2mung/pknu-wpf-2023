@@ -47,3 +47,14 @@ WPF : Windows Presentation Foundation
 <영화 검색앱 중간 과정>
 
 <img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wpf11_movieFinder.png" width="600">
+
+## 7일차
+- WPF 응용
+    - 영화검색앱
+        - 화면정리
+        - cefSharp.WPF
+        - youtube OpenAPI
+        - DB 데이터 바인딩
+
+<7일차 영화 검색 앱>
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/Day07_wp11_movieFinder.gif" width="600">
