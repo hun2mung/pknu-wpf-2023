@@ -57,4 +57,5 @@ WPF : Windows Presentation Foundation
         - DB 데이터 바인딩
 
 <7일차 영화 검색 앱>
+
 <img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/Day07_wp11_movieFinder.gif" width="600">
