@@ -35,7 +35,7 @@ namespace wp09_caliburnApp.ViewModels
                 lastName = value;
                 NotifyOfPropertyChange(() => LastName);
                 NotifyOfPropertyChange(nameof(CanClearName));
-                NotifyOfPropertyChange(() => FullName);   // 변화 통보
+                NotifyOfPropertyChange(nameof(FullName));   // 변화 통보
             }
         }
 
@@ -45,6 +45,7 @@ namespace wp09_caliburnApp.ViewModels
         }
 
         // 콤보박스에 바인딩할 속성
+        // var 사용 불가
         private BindableCollection<Person> managers = new BindableCollection<Person>();
 
         public BindableCollection<Person> Managers
@@ -55,7 +56,7 @@ namespace wp09_caliburnApp.ViewModels
 
         private Person selectedManager;
         // 콤보박스에 선택된 값을 지정할 속성
-        private Person SelectedManager
+        public Person SelectedManager
         {
             get => selectedManager;
             set
@@ -85,7 +86,7 @@ namespace wp09_caliburnApp.ViewModels
         // 메서드와 이름 동일하게 앞에 Can
         public bool CanClearName
         {
-            get => !(string.IsNullOrEmpty(firstName) && string.IsNullOrEmpty(lastName));
+            get => !string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName);
         }
     }
 }
