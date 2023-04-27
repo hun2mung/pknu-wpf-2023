@@ -14,7 +14,7 @@
             <iconPacks:PackIconModern Kind="Film" Foreground="White" Margin="5,7,0,0"/>
         </DataTemplate>
     </mah:MetroWindow.IconTemplate>
-    <Grid Margin="10">
+    <Grid Margin="10,10,10,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="1*"/>
@@ -23,6 +23,7 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="80"/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <!--영화명 검색 부분-->
         <Grid Grid.Row="0" Grid.Column="0">
@@ -50,9 +51,9 @@
                 </Button.ContentTemplate>
             </Button>
         </Grid>
-        
+
         <!--데이터 그리드 영역-->
-        <DataGrid x:Name="GrdResult" Grid.Row="1" Grid.Column="0" Margin="5"
+        <DataGrid x:Name="GrdResult" Grid.Row="1" Grid.Column="0" Margin="5,5,5,5"
                   IsReadOnly="True" Style="{StaticResource MahApps.Styles.DataGrid.Azure}"
                   ItemsSource="{Binding}" AutoGenerateColumns="False"
                   SelectedCellsChanged="GrdResult_SelectedCellsChanged">
@@ -77,7 +78,7 @@
                 <!--<DataGridCheckBoxColumn Binding="{Binding Adult}" Header="성인물"/>-->
             </DataGrid.Columns>
         </DataGrid>
-        
+
         <!--포스터 영역-->
         <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
             <GroupBox Header="포스터" Margin="10"
@@ -87,9 +88,9 @@
                 <Image x:Name="ImgPoster" Source="No_Picture.png" Margin="15, 5"/>
             </GroupBox>
         </Grid>
-        
+
         <!--버튼 영역-->
-        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="5">
             <Button x:Name="BtnAddFavorite" Content="즐겨찾기 추가" FontSize="12" 
                     Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Margin="5,15" Click="BtnAddFavorite_Click">
                 <Button.ContentTemplate>
@@ -101,9 +102,9 @@
                     </DataTemplate>
                 </Button.ContentTemplate>
             </Button>
-            
+
             <Button x:Name="BtnViewFavorite" Content="즐겨찾기 보기" FontSize="12" 
-                    Style="{StaticResource MahApps.Styles.Button.Square.Highlight}" Margin="5,15">
+                    Style="{StaticResource MahApps.Styles.Button.Square.Highlight}" Margin="5,15" Click="BtnViewFavorite_Click">
                 <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -113,9 +114,9 @@
                     </DataTemplate>
                 </Button.ContentTemplate>
             </Button>
-            
+
             <Button x:Name="BtnDelFavorite" Content="즐겨찾기 삭제" FontSize="12" 
-                    Style="{StaticResource MahApps.Styles.Button.Square}" Margin="5,15">
+                    Style="{StaticResource MahApps.Styles.Button.Square}" Margin="5,15" Click="BtnDelFavorite_Click" Background="GreenYellow">
                 <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -125,31 +126,39 @@
                     </DataTemplate>
                 </Button.ContentTemplate>
             </Button>
-            
+
             <Button x:Name="BtnWatchTrailer" Content="예고편 보기" FontSize="12" 
                     Style="{StaticResource MahApps.Styles.Button.Flat}" Margin="5,15" Click="BtnWatchTrailer_Click">
                 <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <iconPacks:PackIconModern Kind="YoutubePlay" Margin="5"/>
-                            <TextBlock Text="{Binding}" Margin="5"/>
+                            <iconPacks:PackIconModern Kind="YoutubePlay" Margin="5" Foreground="red"/>
+                            <TextBlock Text="{Binding}" Margin="5" Foreground="Blue" FontWeight="Bold"/>
                         </StackPanel>
                     </DataTemplate>
                 </Button.ContentTemplate>
             </Button>
-            
+
             <!--<Button x:Name="BtnNaverMovie" Content="네이버 영화" Foreground="#099A49" FontSize="12" 
                     Style="{StaticResource MahApps.Styles.Button}" Margin="5,15" Click="BtnNaverMovie_Click">
                 <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <Image Source="naver.png" Width="16" Height="16"/>
-                            --><!--<iconPacks:PackIconModern Kind="Film" Margin="5"/>--><!--
+                            -->
+            <!--<iconPacks:PackIconModern Kind="Film" Margin="5"/>-->
+            <!--
                             <TextBlock Text="{Binding}" Margin="5"/>
                         </StackPanel>
                     </DataTemplate>
                 </Button.ContentTemplate>-->
             <!--</Button>-->
         </StackPanel>
+
+        <StatusBar Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="-10,0,-10,0">
+            <StatusBarItem Content="TMDB &amp; Youtube OpenAPI APP"/>
+            <Separator Style="{StaticResource MahApps.Styles.Separator.StatusBar}"/>
+            <StatusBarItem x:Name="StsResult" />
+        </StatusBar>
     </Grid>
 </mah:MetroWindow>

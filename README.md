@@ -56,6 +56,19 @@ WPF : Windows Presentation Foundation
         - youtube OpenAPI
         - DB 데이터 바인딩
 
-<7일차 영화 검색 앱>
+<!-- <7일차 영화 검색 앱>
 
-<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/Day07_wp11_movieFinder.gif" width="600">
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/Day07_wp11_movieFinder.gif" width="600"> -->
+
+## 8일차
+- WPF 응용
+    - 영화검색앱
+        - DB 데이터바인딩(MySQL)
+    - 미세먼지 확인 앱 개발
+        - mahApps.Metro
+        - 데이터포털 OpenAPI
+        - DB 데이터바인딩(MySQL)
+
+<영화 검색 앱 완료!!!>
+
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp11_moviFinder_Success.mp4" width="600">
