@@ -76,7 +76,7 @@ namespace wpf11_MovieFinder
         }
         private void SearchMovie(string movieName)
         {
-            string tmdb_apiKey = "5500b597538958df01cd31606c0aa22f";
+            string tmdb_apiKey = "";
             string encoding_movieName = HttpUtility.UrlEncode(movieName, Encoding.UTF8);
             string openApiUrl = $@"https://api.themoviedb.org/3/search/movie?api_key={tmdb_apiKey}&language=ko-KR&page=1&include_adult=false&query={encoding_movieName}";
             string result = string.Empty;   // 결과값
