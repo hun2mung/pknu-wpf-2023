@@ -72,3 +72,6 @@ WPF : Windows Presentation Foundation
 <영화 검색 앱 완료!!!>
 
 <img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp11_moviFinder_Success.gif" width="600">
+
+<미세먼지 앱 완료!>
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp12_dustSensor.gif" width="600">
