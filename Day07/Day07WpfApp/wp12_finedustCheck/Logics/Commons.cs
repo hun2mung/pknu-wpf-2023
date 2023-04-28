@@ -23,7 +23,7 @@ namespace wp12_finedustCheck.Logics
                                                         "Port=3306;" +
                                                         "Database=miniproject;" +
                                                         "Uid=root;" +
-                                                        "Pwd=12345;";
+                                                        "Pwd=1234;";
 
         // 메트로 다이얼로그 창을 위한 정적 메서드
         public static async Task<MessageDialogResult> ShowMessageAsync(string title, string message,

@@ -8,7 +8,7 @@
     xmlns:iconpacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:local="clr-namespace:wp12_finedustCheck"
     mc:Ignorable="d"
-    Title="※미세먼지 측정※" Height="450" Width="800" Loaded="MetroWindow_Loaded">
+    Title="※미세먼지 측정 앱 v1.0※" Height="600" Width="800" Loaded="MetroWindow_Loaded">
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
             <iconpacks:PackIconWeatherIcons Kind="Cloudy" Margin="7,7,0,0"/>
@@ -20,6 +20,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
+        
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -40,7 +41,13 @@
         </Grid>
 
         <DataGrid Grid.Row="1" x:Name="GrdResult" Style="{StaticResource MahApps.Styles.DataGrid.Azure}"
-                  ItemsSource="{Binding}" Margin="10" />
+                  ItemsSource="{Binding}" Margin="10" IsReadOnly="True" 
+                  MouseDoubleClick="GrdResult_MouseDoubleClick"/>
+        <!--AutoGenerateColumns="False" : 만든 컬럼 이외에 ItemSource로 바인딩 하여 만들어진 컬럼은 나타나지 않음-->
+
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}" Header="이름" FontWeight="ExtraBold"/>
+            </DataGrid.Columns>-->
 
         <StatusBar Grid.Row="2">
             <StatusBarItem Content="김해시 미세먼지 앱"/>

@@ -73,6 +73,21 @@ WPF : Windows Presentation Foundation
 
 <img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp11_moviFinder_Success.gif" width="600">
 
-<미세먼지 앱 완료!>
+<미세먼지 앱 중간!>
 
 <img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp12_dustSensor.gif" width="600">
+
+## 9일차 < 컴활 시험으로 휴가!!!>
+- WPF 응용
+	- 미세먼지확인 앱 완료
+		- MahApps.Metro
+		- 데이터포털 OpenAPI
+		- DB 데이터바인딩(MySQL)
+	- 개인 포트폴리오 개발
+		- 데이터포털 OpenAPI
+		- 네이버, 구글, 카카오 OpenAPI
+		- 기타 OpenAPI
+
+<미세먼지 앱 완료!!! : 집에서 혼자 마무리 지음!> 
+
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp12_dustSensor_Success.gif" width="600">
