@@ -69,7 +69,7 @@ namespace wpf11_MovieFinder
 
             var res = await req.ExecuteAsync(); // 검색결과를 받아옴
 
-            Debug.WriteLine("유튜브 검색결과--------------");
+            //Debug.WriteLine("유튜브 검색결과--------------");
 
             foreach(var item in res.Items)
             {
