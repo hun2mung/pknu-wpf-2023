@@ -7,7 +7,7 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"         
         xmlns:local="clr-namespace:Wpf_Project"
         mc:Ignorable="d"
-        Title="●김해시 관광지 정보 앱●" Height="550" Width="800" Loaded="MetroWindow_Loaded">
+        Title="● 김해시 관광지 정보 앱" Height="550" Width="800" Loaded="MetroWindow_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>

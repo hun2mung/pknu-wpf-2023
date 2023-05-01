@@ -22,6 +22,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Wpf_Project.Logics;
 using Wpf_Project.Models;
+using System.Text.RegularExpressions;
+using ControlzEx.Standard;
 
 namespace Wpf_Project
 {
@@ -298,7 +300,14 @@ namespace Wpf_Project
                 if (GrdResult.SelectedItem is TourInfo) // openAPI로 검색된 영화의 포스터ㅅ
                 {
                     var place = GrdResult.SelectedItem as TourInfo;
-                    tourPath = place.Images;
+                    tourPath = place.Images[6].ToString();
+
+                    var reg = "[\r\n\\[\\[\\]]";
+                    tourPath = Regex.Replace(tourPath, reg, "");
+                    tourPath = Regex.Replace(tourPath, " ", "");
+                    tourPath = Regex.Replace(tourPath, "\"", "");
+
+
                 }
                 else if (GrdResult.SelectedItem is TourInfoDB)
                 {
@@ -313,6 +322,7 @@ namespace Wpf_Project
                 else // 포스터이미지 경로가 있으면
                 {
                     var base_url = tourPath;
+
                     ImgPicture.Source = new BitmapImage(new Uri(base_url, UriKind.RelativeOrAbsolute));
                 }
             }
@@ -323,7 +333,8 @@ namespace Wpf_Project
         }
 
 
-        
+
+
 
     }
 }
