@@ -80,6 +80,8 @@ namespace Wpf_Project
 
                 foreach (var item in json_array)
                 {
+                    var imgArray = item["images"] as JArray;
+
                     tourinfo.Add(new TourInfo
                     {
                         Name = Convert.ToString(item["name"]),
@@ -89,7 +91,7 @@ namespace Wpf_Project
                         Content = Convert.ToString(item["content"]),
                         Xposition = Convert.ToDouble(item["xposition"]),
                         Yposition = Convert.ToDouble(item["yposition"]),
-                        Images = Convert.ToString(item["images"])
+                        Images = Convert.ToString(imgArray[0])
                     });
 
                     serRes += 1;
@@ -300,13 +302,7 @@ namespace Wpf_Project
                 if (GrdResult.SelectedItem is TourInfo) // openAPI로 검색된 영화의 포스터ㅅ
                 {
                     var place = GrdResult.SelectedItem as TourInfo;
-                    tourPath = place.Images[6].ToString();
-
-                    var reg = "[\r\n\\[\\[\\]]";
-                    tourPath = Regex.Replace(tourPath, reg, "");
-                    tourPath = Regex.Replace(tourPath, " ", "");
-                    tourPath = Regex.Replace(tourPath, "\"", "");
-
+                    tourPath = place.Images.ToString();
 
                 }
                 else if (GrdResult.SelectedItem is TourInfoDB)
@@ -320,10 +316,8 @@ namespace Wpf_Project
                     ImgPicture.Source = new BitmapImage(new Uri("/No_Picture.png", UriKind.RelativeOrAbsolute));
                 }
                 else // 포스터이미지 경로가 있으면
-                {
-                    var base_url = tourPath;
-
-                    ImgPicture.Source = new BitmapImage(new Uri(base_url, UriKind.RelativeOrAbsolute));
+                {                    
+                    ImgPicture.Source = new BitmapImage(new Uri(tourPath, UriKind.RelativeOrAbsolute));
                 }
             }
             catch

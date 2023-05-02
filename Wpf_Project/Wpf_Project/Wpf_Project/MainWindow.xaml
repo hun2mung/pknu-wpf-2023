@@ -44,6 +44,7 @@
                         <StackPanel Orientation="Horizontal">
                             <iconPacks:PackIconModern Kind="Finder" Margin="5"/>
                             <TextBlock Text="{Binding}" Margin="5"/>
+                            <GroupBox Header="GroupBox" Width="100"/>
                         </StackPanel>
                     </DataTemplate>
                 </Button.ContentTemplate>

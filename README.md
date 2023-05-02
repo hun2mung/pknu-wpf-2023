@@ -91,3 +91,12 @@ WPF : Windows Presentation Foundation
 <미세먼지 앱 완료!!! : 집에서 혼자 마무리 지음!> 
 
 <img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wp12_dustSensor_Success.gif" width="600">
+
+## 10일차
+- 개인 미니 프로젝트 완성
+    - openAPI를 활용한 WPF로 만든 김해시 관광 앱
+
+
+<김해시 관광 앱>
+
+<img src = "https://raw.githubusercontent.com/hun2mung/pknu-wpf-2023/main/images/wpf_miniProject_Success.gif" width="600">
